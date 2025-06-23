@@ -34,7 +34,7 @@ func ConnectDB() *mongo.Collection {
 // sahilghadiya7331
 // e6WZozLiLY1vPt8q
 func initMongoDB() {
-	clientOptions := options.Client().ApplyURI("mongodb+srv://parth:1205@task.rv0kd.mongodb.net/?retryWrites=true&w=majority&appName=TASK")
+	clientOptions := options.Client().ApplyURI(" MONGODB_URL")
 	var err error
 	client, err = mongo.Connect(context.TODO(), clientOptions)
 	if err != nil {
